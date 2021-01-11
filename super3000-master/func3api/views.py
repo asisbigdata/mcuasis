@@ -34,6 +34,12 @@ def callback(request):
                     mtext = event.message.text
                     if mtext == '@系網':
                         func.sendCarousel0(event)
+                        
+                    elif mtext == '@加權指數':
+                        func.sendCarousel4(event)
+                        
+                    elif mtext == '@CPI':
+                        func.sendCarousel5(event)
 
                     elif mtext == '@董監事資訊':
                         func.sendCarousel1(event)
@@ -43,12 +49,6 @@ def callback(request):
     
                     elif mtext == '@證券':
                         func.sendCarousel3(event)
-						
-		    elif mtext == '@加權指數':
-                        func.sendCarousel4(event)
-						
-		    elif mtext == '@CPI':
-                        func.sendCarousel5(event)
     
                     
     
