@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>顯示所有資料</title>
+	</head>
+	<body>
+		<h2>顯示 company 資料表所有資料</h2>
+		<table border="1" cellpadding="0" cellspacing="0">
+			<th>編號</th><th>統編</th><th>職務</th><th>姓名</th><th>持股數或投資金額</th>
+			
+			{% for company in companys %}
+				<tr>
+					<td>{{ company.id }} </td>
+					<td>{{ company.cComid }} </td>
+					<td>{{ company.cPosition}} </td>
+					<td>{{ company.cName }} </td>
+					<td>{{ company.cSharemoney }} </td>
+
+				</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
+	
