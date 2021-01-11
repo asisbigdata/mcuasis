@@ -62,7 +62,7 @@ def sendCarousel2(event):  #PM2.5
                 text = 'PM2.5 資訊平台 --- 提供查詢 : 桃園地區PM2.5的10年資訊(2006~2016) & 預測模型'
             ),
             TextSendMessage(
-                text = 'http://web.asisrlab.mcu.edu.tw:3838/survey/Taopm25/'
+                text = 'https://web.mcu.edu.tw/'
             ),
         ]
         line_bot_api.reply_message(event.reply_token,message)
@@ -86,7 +86,7 @@ def sendCarousel4(event):  #台灣加權指數
                 text = '台灣加權指數 建模平台 --- 提供選擇API參數 建構各種預測模型 (1990—2018)'
             ),
             TextSendMessage(
-                text = 'http://web.asisrlab.mcu.edu.tw:3838/survey/twindex/'
+                text = 'https://web.mcu.edu.tw/'
             ),
         ]
         line_bot_api.reply_message(event.reply_token,message)
@@ -98,7 +98,7 @@ def sendCarousel5(event):  #消費者物價指數
                 text = '消費者物價指數  建模平台 --- 提供選擇API參數 建構各種預測模型 (1990—2018)'
             ),
             TextSendMessage(
-                text = 'http://web.asisrlab.mcu.edu.tw:3838/survey/cpi/'
+                text = 'https://web.mcu.edu.tw/'
             ),
         ]
         line_bot_api.reply_message(event.reply_token,message)
